@@ -38,7 +38,7 @@ const Navbar = () => {
 };
 
 const Wrapper = styled.nav`
-  padding: 1.3rem 0 3rem;
+  padding: 2.5rem 0;
   box-shadow: 0px 0px 5px 1px var(--shadow);
   background: var(--elements);
   .center {
