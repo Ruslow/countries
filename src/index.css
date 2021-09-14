@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+.light-theme {
+  --text: hsl(200, 15%, 8%);
+  --input: hsl(0, 0%, 52%);
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --shadow: hsl(0, 0%, 90%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-theme {
+  --text: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --shadow: hsl(207, 26%, 10%);
+}
+
+.center {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text);
+  font-size: 1.2rem;
+  background-color: var(--background);
+}
+.error {
+  color: red;
+  letter-spacing: 2px;
+  margin-left: 1rem;
+}
+.loading {
+  margin-top: 2rem;
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--light-mode-input);
+  border-top: 2px solid var(--dark-mode-elements);
+  border-radius: 50%;
+  animation: cirlce 1s infinite;
+}
+@keyframes cirlce {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
 }
