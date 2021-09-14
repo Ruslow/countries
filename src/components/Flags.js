@@ -105,7 +105,7 @@ const Flags = () => {
                   const { area, flag, name, region, population, capital } =
                     item;
                   return (
-                    <Link to={`countries/${name}`}>
+                    <Link to={`countries/${name.toLowerCase()}`}>
                       <article className="flag" key={area}>
                         <img src={flag} alt={name} />
                         <div className="footer">

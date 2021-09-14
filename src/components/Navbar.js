@@ -23,12 +23,12 @@ const Navbar = () => {
           {theme === "light-theme" ? (
             <>
               <HiOutlineMoon />
-              <h4>Dark Mode</h4>
+              Dark Mode
             </>
           ) : (
             <>
               <HiSun />
-              <h4>Light Mode</h4>
+              Light Mode
             </>
           )}
         </button>
